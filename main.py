@@ -1,12 +1,9 @@
 from classes import *
 
-tri = Triangulo(4,3)
-ret = Retangulo(6,10)
+tri = Triangulo()
+ret = Retangulo()
 
-atri = tri.calculaArea()
-ptri = tri.calculaPerimetro()
-aret = ret.calculaPerimetro()
-pret = ret.calculaArea()
-
-
-print(atri, ptri, aret, pret)
+tri.calculaArea(10,3)
+tri.calculaPerimetro(2)
+ret.calculaPerimetro(4,5)
+ret.calculaArea(7,6)

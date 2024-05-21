@@ -4,27 +4,25 @@ class Forma():
         self.perimetro = 0
 
 class Retangulo(Forma):
-    def __init__(self, base,altura):
-        self.base = base
-        self.altura = altura
-    def calculaArea(self):
-        self.area = self.base*self.altura
-        return self.area
+    def __init__(self):
+        super().__init__()
+    def calculaArea(self,base,altura):
+        self.area = base*altura
+        print(self.area)
 
 
-    def calculaPerimetro(self):
-        self.perimetro = (self.base*2)+(self.altura*2)
-        return self.perimetro
+    def calculaPerimetro(self,base,altura):
+        self.perimetro = 2*(base*altura)
+        print(self.perimetro)
 
 class Triangulo(Forma):
-    def __init__(self,base,altura):
-        self.base = base
-        self.altura = altura
-    def calculaArea(self):
-        self.area = (self.base*self.altura)
-        return self.area
+    def __init__(self):
+        super().__init__()
+    def calculaArea(self,base,altura):
+        self.area = (base*altura)/2
+        print(self.area)
 
 
-    def calculaPerimetro(self,):
-        self.perimetro = self.base*3
-        return self.perimetro
+    def calculaPerimetro(self, lado):
+        self.perimetro = lado * 3
+        print (self.perimetro)
